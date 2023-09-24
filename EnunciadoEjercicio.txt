@@ -1,0 +1,21 @@
+Cargar materias, profesores, alumnos, examenes, contenido de examenes.
+Previamente deben tener creados todos los admin.py de cada app.
+
+Agregar un profesor a una materia.
+
+Cargar el usuario juan perez y toda la información relacionada a el.
+Inscribir juan perez a la materia del profesor cargado anteriormente.
+
+Realizar un examen al alumno juan perez. (previo a esto, deben crear la tabla que relacione a los exámenes resueltos, con el examen y el contenido) 
+Obtener todos los examenes del alumno "juan perez"
+
+Obtener los examenes de juan perez donde su nota fue mayor o igual a 6.
+Obtener el contenido del examen de juan perez.
+
+En una unica query
+Obtener el examen de una materia en particular de un alumno (juan perez) donde su nota fue mayor o igual a 6. 
+y obtener el contenido de ese examen. (previamente tiene que estar todo cargado y el resultado tiene que ser exitoso)
+
+En una unica query obtener el contenido del examen resuelto por juan perez
+de una materia en particular (a eleccion) en donde el puntaje de la pregunta sea mayor a 2 
+Y además deberan crear un metodo de clase para obtener estas querys a partir de datos parametrizados

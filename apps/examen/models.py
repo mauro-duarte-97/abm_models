@@ -38,16 +38,16 @@ class ContenidoExamen(models.Model):
         return f'Contenido: {self.id} - {self.puntaje}'
 
 
-# class ExamenAlumno(models.Model):
-#     alumno = models.ForeignKey(
-#         'alumno.Alumno',
-#         on_delete=models.CASCADE
-#     )
-#     examen = models.ForeignKey(
-#         'examen.Examen',
-#         on_delete=models.CASCADE
-#     )
-#     nota = models.IntegerField()
+class ExamenAlumno(models.Model):
+    alumno = models.ForeignKey(
+        'alumno.Alumno',
+        on_delete=models.CASCADE
+    )
+    examen = models.ForeignKey(
+        'examen.Examen',
+        on_delete=models.CASCADE
+    )
+    nota = models.IntegerField()
 
-#     def __str__(self):
-#         return f'Alumno: {self.alumno.id} Examen: {self.examen.id} Nota: {self.nota}'
+    def __str__(self):
+        return f'Alumno: {self.alumno.id} Examen: {self.examen.id} Nota: {self.nota}'

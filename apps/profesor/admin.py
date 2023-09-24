@@ -4,7 +4,7 @@ from apps.profesor.models import Profesor
 
 
 @admin.register(Profesor)
-class AlumnoAdmin(admin.ModelAdmin):
+class ProfesorAdmin(admin.ModelAdmin):
     list_display = ('nombre', 'dni')
     search_fields = ('dni',)
     list_filter = ('dni',)
